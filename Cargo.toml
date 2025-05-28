@@ -1,0 +1,15 @@
+[package]
+name = "bevy_worker"
+authors = ["TeamDman"]
+repository = "https://github.com/TeamDman/bevy-worker.git"
+edition = "2024"
+license = "MPL-2.0"
+version = "0.1.0"
+
+[dependencies]
+bevy = { version = "0.16.0" }
+crossbeam-channel = "0.5.15"
+windows = { version = "0.61.1", features = [
+    "Win32_Foundation",
+    "Win32_System_Com",
+] }
